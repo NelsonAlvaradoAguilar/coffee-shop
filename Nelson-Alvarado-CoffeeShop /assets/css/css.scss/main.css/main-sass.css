@@ -1,0 +1,82 @@
+@import url(/assets/images/coffeebeans-hero.png);
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glowbar {
+  0% {
+    background-color: #23f7f3;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    background: #696132;
+    color: #ffffff;
+  }
+}
+body {
+  display: flex;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+body .primary-nav-bar {
+  padding: 0px 60px 30px 30px;
+  background-color: #fff0ed;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .primary-nav-bar .navegation_header {
+  font-size: 2.5rem;
+  font-weight: 300;
+  box-sizing: content-box;
+  display: inline;
+  margin-right: auto;
+}
+body .primary-nav-bar nav ul {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  padding-bottom: 0.9rem;
+  padding-top: 0.9rem;
+  display: flex;
+}
+body .primary-nav-bar nav ul li {
+  list-style: none;
+  margin-top: 2rem;
+}
+body .primary-nav-bar nav ul li .primary-nav-bar__link {
+  font-size: 1.31rem;
+  font-weight: 400;
+  margin-left: 4rem;
+  display: flex;
+}
+body .primary-nav-bar nav ul li:last-child a {
+  color: #5bacc3;
+}
+body * a {
+  color: #393939;
+  text-decoration: none;
+}
+body h2 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-start: 0;
+}
+body section.cold-drinks {
+  background-size: cover;
+  background-color: #f7f7f7;
+}
+body section.hot-drinks,
+body .pastries {
+  background-size: cover;
+  background-color: #fff0ed;
+}/*# sourceMappingURL=main-sass.css.map */

@@ -1,0 +1,345 @@
+@import url(/assets/images/coffeebeans-hero.png);
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glowbar {
+  0% {
+    background-color: #23f7f3;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    background: #696132;
+    color: #ffffff;
+  }
+}
+.header-hero {
+  background-color: #fff0ed;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 35vw;
+  background-position: right 20% bottom 70%;
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+}
+.header-hero .text__container {
+  margin-right: 5rem;
+  margin-left: 8rem;
+  box-sizing: content-box;
+  background-size: contain;
+  display: flex;
+  box-sizing: content-box;
+  background-size: contain;
+  width: 23rem;
+  flex-direction: column;
+  position: relative;
+  top: 5rem;
+}
+.header-hero .text__container .title {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+.header-hero .text__container p.coffee-description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+}
+.header-hero .text__container .shop-now {
+  position: absolute;
+  z-index: 1;
+}
+.header-hero .text__container .shop-now.border {
+  z-index: 0;
+}
+
+section.our-products {
+  font-size: 2rem;
+  box-sizing: border-box;
+  background-size: cover;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+section.our-products .header__menu {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+section.our-products .our-products__container {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+}
+section.our-products .our-products__container .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 20rem;
+  height: 27rem;
+  box-sizing: border-box;
+  border-radius: 0.63rem;
+  margin: auto;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+}
+section.our-products .our-products__container .cards .card__image {
+  margin: auto;
+}
+section.our-products .our-products__container .cards .card__image .img {
+  width: 6rem;
+}
+section.our-products .our-products__container .cards .coldbrew {
+  margin-top: 1.5rem;
+  width: 5rem;
+}
+section.our-products .our-products__container .cards .card__content {
+  background-color: #fff0ed;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  background-size: contain;
+  margin-top: auto;
+  border-bottom-left-radius: 0.62rem;
+  border-bottom-right-radius: 0.62rem;
+}
+section.our-products .our-products__container .cards .card__content p.coffee-description__price {
+  margin-right: 1rem;
+  margin-left: 0px;
+  font-size: 2.5rem;
+  color: #5bacc3;
+  font-weight: bold;
+}
+section.our-products .our-products__container .cards .card__content .coffee-description__quantity {
+  color: #909090;
+  font-size: 1.12rem;
+}
+section.our-products .our-products__container .cards .card__content .card--content__sub {
+  padding: 0.94rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.our-products .our-products__container .cards .card__content .card--content__sub .drinks-name {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+section.our-products .our-products__container .cards .card__content .card--content__sub .coffee-description__price,
+section.our-products .our-products__container .cards .card__content .card--content__sub .coffee-description__quantity {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+section.our-products .button-stack {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  height: 4rem;
+  width: 12.5rem;
+  margin-top: 1rem;
+  background-color: #5bacc3;
+  background-size: cover;
+}
+section.our-products .button-stack .view-all {
+  position: absolute;
+  z-index: 1;
+}
+section.our-products .button-stack .view-all.border {
+  z-index: 0;
+}
+
+/*button section*/
+.button {
+  color: white;
+  border-style: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  width: 140px;
+  height: 2.8rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-stack {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  height: 4rem;
+  width: 12.5rem;
+  margin-top: 1rem;
+  background-color: #5bacc3;
+  background-size: cover;
+}
+
+.border {
+  border: 2px solid #393939;
+  bottom: 4.5px;
+  left: -8px;
+  width: 12.5rem;
+  height: 3.9rem;
+  z-index: 0;
+  position: relative;
+}
+
+section.Weare--different {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+section.Weare--different .Weare--different__text {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-between;
+  margin: 5rem;
+}
+section.Weare--different .Weare--different__text .weare--diferent__images {
+  display: flex;
+  padding: 1rem 1rem 1rem 0rem;
+  justify-content: space-between;
+}
+section.Weare--different .Weare--different__text .learn-more.border {
+  position: relative;
+  z-index: 0;
+}
+section.Weare--different .Weare--different__text .learn-more {
+  position: absolute;
+  z-index: 1;
+}
+section.Weare--different .img-content {
+  width: 5rem;
+}
+section.Weare--different .stack {
+  display: flex;
+  margin-right: 5rem;
+  position: relative;
+  top: 3rem;
+  width: 24rem;
+  height: 24rem;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+section.Weare--different .stack .stacking {
+  position: absolute;
+}
+section.Weare--different .stack .box {
+  position: relative;
+  border: 4px solid #5bacc3;
+  z-index: 1;
+  bottom: 1.3rem;
+  right: 1.3rem;
+  width: 24rem;
+  height: 24rem;
+}
+section.Weare--different .stack .img--tiltedcan {
+  width: 8rem;
+  position: absolute;
+  bottom: 6rem;
+  z-index: 2;
+}
+section.Weare--different .stack .img--tiltedcan:hover {
+  cursor: grab;
+  animation: 3s linear 1s infinite running rotate;
+}
+
+section.discount-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section.discount-section .discount--text {
+  display: flex;
+  justify-content: center;
+  background-color: #393939;
+  color: white;
+  background-size: contain;
+  font-size: 2.8rem;
+  font-weight: 400 bold;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 2.25rem;
+  transition: all ease-in-out;
+  animation: glowbar 2s linear infinite alternate;
+}
+section.discount-section .discount--text span {
+  font-weight: bolder;
+}
+
+section.footer {
+  background-color: #FFF0ED;
+}
+section.footer .footer__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+section.footer .footer__content .float {
+  width: 10rem;
+  opacity: 0.25;
+}
+section.footer .footer__content .right {
+  /* float: left;
+     clear: both;
+  }
+
+  .left {
+     /* 
+     float: right;
+     clear: both;*/
+}
+section.footer .footer__content .footer-address {
+  line-height: 1.5;
+  padding-bottom: 6px;
+}
+section.footer .footer__content .footer-address .footer-address__title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+section.footer .footer__content .footer-hours span {
+  font-weight: bolder;
+}
+section.footer .footer__content .footer-hours .footer-hours__title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+section.footer .footer__content .footer-social .footer-social__title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+section.footer .footer__content .logo {
+  width: 3rem;
+}/*# sourceMappingURL=landing.css.map */

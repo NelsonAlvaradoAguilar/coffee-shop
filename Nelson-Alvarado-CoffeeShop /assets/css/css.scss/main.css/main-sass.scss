@@ -1,0 +1,75 @@
+@import"../parcials/keyframes";
+
+@import"../parcials/mixin";
+
+@import"../parcials/variables";
+
+
+body {
+    display: flex;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin: 0%;
+    @include hw();
+
+
+    .primary-nav-bar {
+        padding: 0px 60px 30px 30px;
+        background-color: #fff0ed;
+        @include generic-nav();
+
+        .navegation_header {
+            font-size: 2.5rem;
+            font-weight: 300;
+            box-sizing: content-box;
+            display: inline;
+            margin-right: auto;
+        }
+
+        nav {
+            ul {
+                margin-block-end: 0;
+                margin-block-start: 0;
+                padding-inline-start: 0;
+                padding-bottom: 0.9rem;
+                padding-top: 0.9rem;
+                display: flex;
+
+                li {
+                    list-style: none;
+                    margin-top: 2rem;
+
+                    .primary-nav-bar__link {
+                        font-size: 1.31rem;
+                        font-weight: 400;
+                        margin-left: 4rem;
+                        display: flex;
+                    }
+                }
+
+                li:last-child a {
+                    color: #5bacc3;
+                }
+            }
+        }
+
+    }
+    *a {
+        @include text-decoration();
+    }
+
+    h2 {
+        @include -margin0
+    }
+
+  
+//*Menu page*//
+
+section.cold-drinks {
+    background-size: cover;
+    background-color: $wsectioncolor;
+}
+section.hot-drinks,
+.pastries {background-size: cover;
+    background-color:$psectioncolor;
+}}
